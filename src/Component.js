@@ -15,7 +15,7 @@ function Component() {
             }}/>
        <i onClick={()=>{setSearch(true)
     setState1([state,...state1])
-    console.log(state1);
+    
     }} className="fas fa-search"></i>
              {search?(Product.map(res=>(res.name.toLowerCase()===state1[0].toLowerCase()&&<li>{res.name} {res.price}     {res.category}</li>))):(
              <div>
